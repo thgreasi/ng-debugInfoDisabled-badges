@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="43">
+    <linearGradient id="a" x2="0" y2="100%">
+        <stop offset="0" stop-color="#595959"/>
+        <stop offset="1" stop-color="#363636"/>
+    </linearGradient>
+    <linearGradient id="b" x2="0" y2="100%">
+        <stop offset="0" stop-color="#4AD115"/>
+        <stop offset="1" stop-color="#42C112"/>
+    </linearGradient>
+    <linearGradient id="c" x2="0" y2="100%">
+        <stop offset="0" stop-color="#4AD115"/>
+        <stop offset="1" stop-color="#2B920C"/>
+    </linearGradient>
+    <rect y="0" rx="5" width="60" height="43" fill="url(#a)"/>
+    <rect y="28" x="0" width="60" height="5" fill="url(#b)"/>
+    <rect y="29" rx="5" x="0" width="60" height="15" fill="url(#c)"/>
+    <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="9" font-weight="bold">
+        <text y="12" x="30" fill="#010101" fill-opacity=".3">DebugInfo</text>
+        <text y="11" x="30">DebugInfo</text>
+        <text x="30" y="24" fill="#010101" fill-opacity=".3">Disabled</text>
+        <text x="30" y="23">Disabled</text>
+        <text y="39" x="29.5" fill="#010101" fill-opacity=".3">Ready</text>
+        <text y="38" x="29.5">Ready</text>
+    </g>
+</svg>

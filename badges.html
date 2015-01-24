@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DebugInfo Disabled Badges</title>
+  <style>
+        * {
+            vertical-align: middle;
+        }
+
+        .badgeLine {
+            clear: both;
+        }
+
+        .badge, svg, img {
+            margin: 10px;
+        }
+
+        .badge {
+            /*float: left;*/
+            display: inline-block;
+            overflow: hidden;
+            /*font-family: Verdana,'Droid Sans Mono',monospace;*/
+            font-family: 'DejaVu Sans',Verdana,Geneva,sans-serif;
+            background-color: #000;
+            color: #FFF;
+            text-shadow: 0 1px rgba(1, 1, 1, 0.3);
+        }
+
+        .badge1s {
+            border-radius: 5px;
+
+            font-size: 9px;
+            font-weight: bold;
+            padding: 2px 5px 0;
+            text-align: center;
+        }
+        .badge1s .badgeReady {
+            background-color: #03B301;
+            width: 100%;
+            position: relative;
+            left: -5px;
+            padding: 1px 5px;
+            line-height: 1.4;
+            margin-top: 2px;
+        }
+
+        .badge2s {
+            border-radius: 8px;
+
+            font-size: 9px;
+            font-weight: bold;
+            padding: 3px 5px;
+            text-align: center;
+        }
+        .badge2s .badgeReady {
+            background-color: #03B301;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 0px 5px;
+            line-height: 1.4;
+            margin-top: 2px;
+            color: #000;
+            text-shadow: none;
+        }
+
+        .badge3s {
+            border-radius: 5px;
+
+            font-size: 9px;
+            font-weight: bold;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        .badge3s .badgeReady {
+            padding: 0px 5px;
+            color: black;
+            font-weight: bold;
+            background-color: #01C112;
+            border-radius: 3px;
+            text-shadow: none;
+        }
+
+        .badge {
+            background: linear-gradient(to bottom, #595959, #363636);
+        }
+
+        .badge .badgeReady {
+            background: linear-gradient(to bottom, #4AD115, #2B920C);
+        }
+  </style>
+</head>
+<body>
+    <div class="badgeLine">
+        <img src="debugInfoDisabledBadge1.svg" />
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="43">
+            <linearGradient id="a" x2="0" y2="100%">
+                <stop offset="0" stop-color="#595959"/>
+                <stop offset="1" stop-color="#363636"/>
+            </linearGradient>
+            <linearGradient id="b" x2="0" y2="100%">
+                <stop offset="0" stop-color="#4AD115"/>
+                <stop offset="1" stop-color="#42C112"/>
+            </linearGradient>
+            <linearGradient id="c" x2="0" y2="100%">
+                <stop offset="0" stop-color="#4AD115"/>
+                <stop offset="1" stop-color="#2B920C"/>
+            </linearGradient>
+            <rect y="0" rx="5" width="60" height="43" fill="url(#a)"/>
+            <rect y="28" x="0" width="60" height="5" fill="url(#b)"/>
+            <rect y="29" rx="5" x="0" width="60" height="15" fill="url(#c)"/>
+            <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="9" font-weight="bold">
+                <text y="12" x="30" fill="#010101" fill-opacity=".3">DebugInfo</text>
+                <text y="11" x="30">DebugInfo</text>
+                <text x="30" y="24" fill="#010101" fill-opacity=".3">Disabled</text>
+                <text x="30" y="23">Disabled</text>
+                <text y="39" x="29.5" fill="#010101" fill-opacity=".3">Ready</text>
+                <text y="38" x="29.5">Ready</text>
+            </g>
+        </svg>
+
+        <div style="display: inline-block; margin: 10px;">
+            <div style="padding: 2px 5px 0;overflow: hidden;font-family: 'DejaVu Sans',Verdana,Geneva,sans-serif;font-size: 9px;font-weight: bold;color: #FFF;text-shadow: 0 1px rgba(1, 1, 1, 0.3);border-radius: 5px;background: linear-gradient(to bottom, #595959, #363636);text-align: center;display: inline-block;">
+                <div>DebugInfo</div>
+                <div>Disabled</div>
+                <div style="position: relative;left: -5px;width: 100%;padding: 1px 5px;margin-top: 2px;line-height: 1.4;background: linear-gradient(to bottom, #4AD115, #2B920C);">Ready</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="badgeLine">
+        <div class="badge badge1s">
+            <div>DebugInfo</div>
+            <div>Disabled</div>
+            <div class="badgeReady">Ready</div>
+        </div>
+        <div class="badge badge2s">
+            <div>Disabled</div>
+            <div>DebugInfo</div>
+            <div class="badgeReady">Ready</div>
+        </div>
+        <div class="badge badge3s">
+            <div>DebugInfo</div>
+            <div>Disabled</div>
+            <div class="badgeReady">Ready</div>
+        </div>
+    </div>
+</body>
+</html>
